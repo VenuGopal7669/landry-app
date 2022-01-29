@@ -1,0 +1,17 @@
+
+<div style="padding: 20px; padding-left: 20%; padding-right: 20%; color: blue;">
+    <h1 style="border-bottom:3px solid gray;">Need for {{userId}} to {{userName1}}</h1>
+   
+    <div class="my-3">
+        <label style="color: brown; font-size: 20px;">User Name</label>
+        <!-- <input type="text" class="form-control" (input)="onUpdateUser($event)" />
+        <br /> -->
+        <input type="text" class="form-control" [(ngModel)]="userName" />
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+        <div style=" width: 400px; height: 100px; border: 1px solid rgb(187, 183, 183);"><p style="margin: 20px; font-size: 20px; color: rgb(87, 153, 87);">{{ userName }}</p></div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" [disabled]="!allowNewUser" (click)="changeUserCreatedStatus()">Button</button>
+    <div>{{ userCreatedStatus }}</div>
+</div>
