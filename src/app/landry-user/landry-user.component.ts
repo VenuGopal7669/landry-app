@@ -11,6 +11,7 @@ export class LandryUserComponent implements OnInit {
   allowNewUser = false;
   userCreatedStatus = 'No User is Created'
   userName = '';
+  isUserCreated = false;
 
   constructor() {
     setTimeout(() => {
@@ -18,6 +19,7 @@ export class LandryUserComponent implements OnInit {
     },5000);
    }
    changeUserCreatedStatus() {
+     this.isUserCreated = true;
      this.userCreatedStatus = 'user is created';
    }
    onUpdateUser(event: Event) {
